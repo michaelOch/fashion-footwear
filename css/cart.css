@@ -10,6 +10,12 @@ body {
 
 /* Header Section Styles */
 
+.header-section h1 {
+    margin-top: 1.5rem;
+    font-size: 50px;
+    font-weight: bold;
+}
+
 .navbar-nav li:hover {
     background-color: #ffffff;
 }
@@ -47,10 +53,6 @@ body {
 
 /* Cart Section Styles */
 
-.desktop-cart {
-    display: flex;
-}
-
 .cart-section tbody > tr {
     border-bottom: 1px solid black !important;
 }
@@ -60,6 +62,8 @@ body {
 }
 
 .cart-section h3 {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
     font-weight: bold;
 }
 
@@ -70,6 +74,11 @@ body {
 
 .cart-section label {
     font-size: 14px;
+}
+
+.cart-section .cart-total-wrapper, .cart-total_mobile {
+    display: none;
+    font-weight: bold;
 }
 
 .cart-section span {
@@ -96,6 +105,10 @@ body {
     box-shadow: 2px 6px 6px rgba(151, 151, 151, 0.2);
 }
 
+.cart-summary form > div {
+    margin: 3rem 0;
+}
+
 .cart-summary h4 {
     font-size: 24px;
     font-weight: bold;
@@ -106,30 +119,8 @@ body {
     font-weight: bold;
 }
 
-/* Mobile Cart Section */
-
-.mobile-cart {
-    display: none;
-}
-
-.mobile-cart h5 {
-    font-size: 14px;
-    font-weight: bold;
-}
-
-.mobile-cart i {
-    font-size: 12px;
-}
-
-.mobile-cart_avatar > img {
-    height: 100px !important;
-    width: 100px !important;
-}
-
-.btn-close {
-    position: absolute;
-    top: 5px;
-    right: 5px;
+.cart-summary span {
+    font-size: 18px;
 }
 
 /**************************************************
@@ -138,17 +129,61 @@ body {
 
 @media only screen and (max-width: 992px) {
 
+    .header-section h1 {
+        margin-top: 0;
+        font-size: 35px;
+        font-weight: bold;
+    }
+
     .cart-section h3 {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
         font-size: 20px;
         text-align: center;
     }
 
-    .desktop-cart {
+    .cart-summary form > div {
+        margin: 2rem 0;
+    }
+
+    .cart-section .cart-total-wrapper, .cart-total_mobile {
+        display: inline-block;
+    }
+
+    .cart-title {
+        background: #ffffff;
+    }
+
+    .table-header {
         display: none;
     }
 
-    .mobile-cart {
-        display: block;
+    .cart-section img {
+        height: 100px !important;
+        width: 100px !important;
+    }
+
+    .cart-section table td {
+        padding: 5px;
+    }
+
+    .cart-section h5 {
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    .cart-section .cart-total {
+        display: none;
+    }
+
+    .cart-section label, span, i {
+        font-size: 12px !important;
+    }
+
+    .btn-delete {
+        position: absolute;
+        top: 5px;
+        right: 0px;
     }
 
     .cart-summary h4, label {

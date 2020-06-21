@@ -16,7 +16,7 @@
 <body>
     <header class="header-section">
         <div class="container py-2">
-            <h3 class="mb-0">LEGWORK</h3>
+            <h1 class="mb-0">LEGWORK</h1>
         </div>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-0">
             <div class="container">
@@ -52,33 +52,32 @@
     <!-- Cart Section -->
     <section class="cart-section">
         <div class="container">
-            <h3 class="my-3">Cart Content</h3>
+            <h3 class="">Cart Content</h3>
             <div class="row mb-3">
-                <!-- Desktop Cart View -->
-                <div class="col-md-8 mb-3 desktop-cart">
+                <div class="col-md-8 mb-3">
                     <div class="table-responsive">
                         <table class="table table-borderless">
                             <thead>
                                 <tr class="cart-title">
                                     <th scope="col">
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="">
+                                            <input class="form-check-input select-all" type="checkbox" value="">
                                             <label class="form-check-label" for="selectAll">
                                                 Select All
                                             </label>
                                         </div>
                                     </th>
-                                    <th scope="col">Items</th>
-                                    <th scope="col" class="text-center">Quantity</th>
-                                    <th scope="col" class="text-center">Total</th>
+                                    <th scope="col" class="table-header">Items</th>
+                                    <th scope="col" class="table-header text-center">Quantity</th>
+                                    <th scope="col" class="table-header text-center">Total</th>
                                     <th scope="col"></th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr class="">
+                                <tr class="" id="ci-1">
                                     <td>
                                         <div class="form-check d-flex align-items-center">
-                                            <input class="form-check-input" type="checkbox" value="">
+                                            <input class="form-check-input cart-item" type="checkbox" value="">
                                             <img class="" src="./image/yezzy_boost.png" alt="yezzy boost" >
                                         </div>
                                     </td>
@@ -87,25 +86,26 @@
                                         <label class="d-block mb-0">Color: Red</label>
                                         <label class="d-block mb-0">Size: 12 (US)</label>
                                         <label class="d-block mb-0">Product ID: 2442QR</label>
+                                        <label class="cart-total-wrapper">$<span class="cart-total_mobile">240.00</span></label>
                                     </td>
                                     <td>
                                         <div class="d-flex justify-content-center align-items-center">
-                                            <i class="fa fa-minus" aria-hidden="true"></i>
-                                            <span class="badge badge-dark mx-2">02</span>
-                                            <i class="fa fa-plus" aria-hidden="true"></i>
+                                            <i class="fa fa-minus decrement" aria-hidden="true"></i>
+                                            <span class="badge badge-dark mx-2">01</span>
+                                            <i class="fa fa-plus increment" aria-hidden="true"></i>
                                         </div>
                                     </td>
-                                    <td class="cart-total">$240.00</td>
-                                    <td>
-                                        <div class="d-flex justify-content-center align-items-center bg-dark rounded-circle p-1">
-                                            <i class="fa fa-close" style="color: #ffffff; font-size: 12px;" aria-hidden="true"></i>
+                                    <td class="cart-total">$<span>240.00</span></td>
+                                    <td class="position-relative">
+                                        <div class="d-flex justify-content-center align-items-center bg-dark rounded-circle p-1 btn-delete">
+                                            <i class="fa fa-close delete" style="color: #ffffff; font-size: 12px;" aria-hidden="true"></i>
                                         </div>
                                     </td>
                                 </tr>
-                                <tr>
+                                <tr id="ci-2">
                                     <td>
                                         <div class="form-check d-flex align-items-center">
-                                            <input class="form-check-input" type="checkbox" value="">
+                                            <input class="form-check-input cart-item" type="checkbox" value="">
                                             <img class="" src="./image/casual_sneek.png" alt="casual sneek" >
                                         </div>
                                     </td>
@@ -114,25 +114,26 @@
                                         <label class="d-block mb-0">Color: Red</label>
                                         <label class="d-block mb-0">Size: 12 (US)</label>
                                         <label class="d-block mb-0">Product ID: 2442QR</label>
+                                        <label class="cart-total-wrapper">$<span class="cart-total_mobile">140.00</span></label>
                                     </td>
                                     <td>
                                         <div class="d-flex justify-content-center align-items-center">
-                                            <i class="fa fa-minus" aria-hidden="true"></i>
-                                            <span class="badge badge-dark mx-2">02</span>
-                                            <i class="fa fa-plus" aria-hidden="true"></i>
+                                            <i class="fa fa-minus decrement" aria-hidden="true"></i>
+                                            <span class="badge badge-dark mx-2">01</span>
+                                            <i class="fa fa-plus increment" aria-hidden="true"></i>
                                         </div>
                                     </td>
-                                    <td class="cart-total">$140.00</td>
-                                    <td>
-                                        <div class="d-flex justify-content-center align-items-center bg-dark rounded-circle p-1">
-                                            <i class="fa fa-close" style="color: #ffffff; font-size: 12px;" aria-hidden="true"></i>
+                                    <td class="cart-total">$<span>140.00</span></td>
+                                    <td class="position-relative">
+                                        <div class="d-flex justify-content-center align-items-center bg-dark rounded-circle p-1 btn-delete">
+                                            <i class="fa fa-close delete" style="color: #ffffff; font-size: 12px;" aria-hidden="true"></i>
                                         </div>
                                     </td>
                                 </tr>
-                                <tr>
+                                <tr id="ci-3">
                                     <td>
                                         <div class="form-check d-flex align-items-center">
-                                            <input class="form-check-input" type="checkbox" value="">
+                                            <input class="form-check-input cart-item" type="checkbox" value="">
                                             <img class="" src="./image/converse_stripe.png" alt="converse stripe" >
                                         </div>
                                     </td>
@@ -141,25 +142,26 @@
                                         <label class="d-block mb-0">Color: Red</label>
                                         <label class="d-block mb-0">Size: 12 (US)</label>
                                         <label class="d-block mb-0">Product ID: 2442QR</label>
+                                        <label class="cart-total-wrapper">$<span class="cart-total_mobile">340.00</span></label>
                                     </td>
                                     <td>
                                         <div class="d-flex justify-content-center align-items-center">
-                                            <i class="fa fa-minus" aria-hidden="true"></i>
-                                            <span class="badge badge-dark mx-2">02</span>
-                                            <i class="fa fa-plus" aria-hidden="true"></i>
+                                            <i class="fa fa-minus decrement" aria-hidden="true"></i>
+                                            <span class="badge badge-dark mx-2">01</span>
+                                            <i class="fa fa-plus increment" aria-hidden="true"></i>
                                         </div>
                                     </td>
-                                    <td class="cart-total">$340.00</td>
-                                    <td>
-                                        <div class="d-flex justify-content-center align-items-center bg-dark rounded-circle p-1">
-                                            <i class="fa fa-close" style="color: #ffffff; font-size: 12px;" aria-hidden="true"></i>
+                                    <td class="cart-total">$<span>340.00</span></td>
+                                    <td class="position-relative">
+                                        <div class="d-flex justify-content-center align-items-center bg-dark rounded-circle p-1 btn-delete">
+                                            <i class="fa fa-close delete" style="color: #ffffff; font-size: 12px;" aria-hidden="true"></i>
                                         </div>
                                     </td>
                                 </tr>
-                                <tr>
+                                <tr id="ci-4">
                                     <td>
                                         <div class="form-check d-flex align-items-center">
-                                            <input class="form-check-input" type="checkbox" value="">
+                                            <input class="form-check-input cart-item" type="checkbox" value="">
                                             <img class="" src="./image/dior_oblique.png" alt="dior oblique" >
                                         </div>
                                     </td>
@@ -168,25 +170,26 @@
                                         <label class="d-block mb-0">Color: Red</label>
                                         <label class="d-block mb-0">Size: 12 (US)</label>
                                         <label class="d-block mb-0">Product ID: 2442QR</label>
+                                        <label class="cart-total-wrapper">$<span class="cart-total_mobile">270.00</span></label>
                                     </td>
                                     <td>
                                         <div class="d-flex justify-content-center align-items-center">
-                                            <i class="fa fa-minus" aria-hidden="true"></i>
-                                            <span class="badge badge-dark mx-2">02</span>
-                                            <i class="fa fa-plus" aria-hidden="true"></i>
+                                            <i class="fa fa-minus decrement" aria-hidden="true"></i>
+                                            <span class="badge badge-dark mx-2">01</span>
+                                            <i class="fa fa-plus increment" aria-hidden="true"></i>
                                         </div>
                                     </td>
-                                    <td class="cart-total">$270.00</td>
-                                    <td>
-                                        <div class="d-flex justify-content-center align-items-center bg-dark rounded-circle p-1">
-                                            <i class="fa fa-close" style="color: #ffffff; font-size: 12px;" aria-hidden="true"></i>
+                                    <td class="cart-total">$<span>270.00</span></td>
+                                    <td class="position-relative">
+                                        <div class="d-flex justify-content-center align-items-center bg-dark rounded-circle p-1 btn-delete">
+                                            <i class="fa fa-close delete" style="color: #ffffff; font-size: 12px;" aria-hidden="true"></i>
                                         </div>
                                     </td>
                                 </tr>
-                                <tr>
+                                <tr id="ci-5">
                                     <td>
                                         <div class="form-check d-flex align-items-center">
-                                            <input class="form-check-input" type="checkbox" value="">
+                                            <input class="form-check-input cart-item" type="checkbox" value="">
                                             <img class="" src="./image/puma_rider.png" alt="" >
                                         </div>
                                     </td>
@@ -195,18 +198,19 @@
                                         <label class="d-block mb-0">Color: Red</label>
                                         <label class="d-block mb-0">Size: 12 (US)</label>
                                         <label class="d-block mb-0">Product ID: 2442QR</label>
+                                        <label class="cart-total-wrapper">$<span class="cart-total_mobile">650.00</span></label>
                                     </td>
                                     <td>
                                         <div class="d-flex justify-content-center align-items-center">
-                                            <i class="fa fa-minus" aria-hidden="true"></i>
-                                            <span class="badge badge-dark mx-2">02</span>
-                                            <i class="fa fa-plus" aria-hidden="true"></i>
+                                            <i class="fa fa-minus decrement" aria-hidden="true"></i>
+                                            <span class="badge badge-dark mx-2">01</span>
+                                            <i class="fa fa-plus increment" aria-hidden="true"></i>
                                         </div>
                                     </td>
-                                    <td class="cart-total">$650.00</td>
-                                    <td>
-                                        <div class="d-flex justify-content-center align-items-center bg-dark rounded-circle p-1">
-                                            <i class="fa fa-close" style="color: #ffffff; font-size: 12px;" aria-hidden="true"></i>
+                                    <td class="cart-total">$<span>650.00</span></td>
+                                    <td class="position-relative">
+                                        <div class="d-flex justify-content-center align-items-center bg-dark rounded-circle p-1 btn-delete">
+                                            <i class="fa fa-close delete" style="color: #ffffff; font-size: 12px;" aria-hidden="true"></i>
                                         </div>
                                     </td>
                                 </tr>
@@ -214,153 +218,19 @@
                         </table>
                     </div>
                 </div>
-                <!-- Mobile Cart View -->
-                <div class="col-md-8 mb-3 mobile-cart">
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="">
-                        <label class="form-check-label" for="selectAll">
-                            <h6>Select All</h6>
-                        </label>
-                    </div>
-                    <article class="mb-2">
-                        <div class="form-check d-flex align-items-center">
-                            <input class="form-check-input" type="checkbox" value="">
-                            <div class="d-flex w-100 align-items-center justify-content-between border border-dark rounded p-2">
-                                <div class="mobile-cart_avatar mr-1">
-                                    <img class="d-block h-100" src="./image/yezzy_boost.png" alt="yezzy boost" >
-                                </div>
-                                <div class="">
-                                    <h5>Yezzy Boost 270</h5>
-                                    <label class="d-block mb-0">Color: Red</label>
-                                    <label class="d-block mb-0">Size: 12 (US)</label>
-                                    <label class="d-block mb-0">Product ID: 2442QR</label>
-                                    <h5 class="d-block mb-0">$240.00</h5>
-                                </div>
-                                <div class="d-flex justify-content-center align-items-center">
-                                    <i class="fa fa-minus" aria-hidden="true"></i>
-                                    <span class="badge badge-dark mx-2">02</span>
-                                    <i class="fa fa-plus" aria-hidden="true"></i>
-                                </div>
-                                <div class="d-flex justify-content-center align-items-center badge badge-dark rounded-circle px-1 btn-close">
-                                    <i class="fa fa-close text-white" aria-hidden="true"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="mb-2">
-                        <div class="form-check d-flex align-items-center">
-                            <input class="form-check-input" type="checkbox" value="">
-                            <div class="d-flex w-100 align-items-center justify-content-between border border-dark rounded p-2">
-                                <div class="mobile-cart_avatar mr-1">
-                                    <img class="d-block h-100" src="./image/casual_sneek.png" alt="casual sneek" >
-                                </div>
-                                <div class="">
-                                    <h5>Casual Sneek</h5>
-                                    <label class="d-block mb-0">Color: Red</label>
-                                    <label class="d-block mb-0">Size: 12 (US)</label>
-                                    <label class="d-block mb-0">Product ID: 2442QR</label>
-                                    <h5 class="d-block mb-0">$240.00</h5>
-                                </div>
-                                <div class="d-flex justify-content-center align-items-center">
-                                    <i class="fa fa-minus" aria-hidden="true"></i>
-                                    <span class="badge badge-dark mx-2">02</span>
-                                    <i class="fa fa-plus" aria-hidden="true"></i>
-                                </div>
-                                <div class="d-flex justify-content-center align-items-center badge badge-dark rounded-circle px-1 btn-close">
-                                    <i class="fa fa-close text-white" aria-hidden="true"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="mb-2">
-                        <div class="form-check d-flex align-items-center">
-                            <input class="form-check-input" type="checkbox" value="">
-                            <div class="d-flex w-100 align-items-center justify-content-between border border-dark rounded p-2">
-                                <div class="mobile-cart_avatar mr-1">
-                                    <img class="d-block h-100" src="./image/converse_stripe.png" alt="converse stripe" >
-                                </div>
-                                <div class="">
-                                    <h5>Converse Stripe</h5>
-                                    <label class="d-block mb-0">Color: Red</label>
-                                    <label class="d-block mb-0">Size: 12 (US)</label>
-                                    <label class="d-block mb-0">Product ID: 2442QR</label>
-                                    <h5 class="d-block mb-0">$240.00</h5>
-                                </div>
-                                <div class="d-flex justify-content-center align-items-center">
-                                    <i class="fa fa-minus" aria-hidden="true"></i>
-                                    <span class="badge badge-dark mx-2">02</span>
-                                    <i class="fa fa-plus" aria-hidden="true"></i>
-                                </div>
-                                <div class="d-flex justify-content-center align-items-center badge badge-dark rounded-circle px-1 btn-close">
-                                    <i class="fa fa-close text-white" aria-hidden="true"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="mb-2">
-                        <div class="form-check d-flex align-items-center">
-                            <input class="form-check-input" type="checkbox" value="">
-                            <div class="d-flex w-100 align-items-center justify-content-between border border-dark rounded p-2">
-                                <div class="mobile-cart_avatar mr-1">
-                                    <img class="d-block h-100" src="./image/dior_oblique.png" alt="dior oblique" >
-                                </div>
-                                <div class="">
-                                    <h5>Dior Oblique</h5>
-                                    <label class="d-block mb-0">Color: Red</label>
-                                    <label class="d-block mb-0">Size: 12 (US)</label>
-                                    <label class="d-block mb-0">Product ID: 2442QR</label>
-                                    <h5 class="d-block mb-0">$240.00</h5>
-                                </div>
-                                <div class="d-flex justify-content-center align-items-center">
-                                    <i class="fa fa-minus" aria-hidden="true"></i>
-                                    <span class="badge badge-dark mx-2">02</span>
-                                    <i class="fa fa-plus" aria-hidden="true"></i>
-                                </div>
-                                <div class="d-flex justify-content-center align-items-center badge badge-dark rounded-circle px-1 btn-close">
-                                    <i class="fa fa-close text-white" aria-hidden="true"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="mb-2">
-                        <div class="form-check d-flex align-items-center">
-                            <input class="form-check-input" type="checkbox" value="">
-                            <div class="d-flex w-100 align-items-center justify-content-between border border-dark rounded p-2">
-                                <div class="mobile-cart_avatar mr-1">
-                                    <img class="d-block h-100" src="./image/puma_rider.png" alt="puma future rider" >
-                                </div>
-                                <div class="">
-                                    <h5>Puma Future Rider</h5>
-                                    <label class="d-block mb-0">Color: Red</label>
-                                    <label class="d-block mb-0">Size: 12 (US)</label>
-                                    <label class="d-block mb-0">Product ID: 2442QR</label>
-                                    <h5 class="d-block mb-0">$240.00</h5>
-                                </div>
-                                <div class="d-flex justify-content-center align-items-center">
-                                    <i class="fa fa-minus" aria-hidden="true"></i>
-                                    <span class="badge badge-dark mx-2">02</span>
-                                    <i class="fa fa-plus" aria-hidden="true"></i>
-                                </div>
-                                <div class="d-flex justify-content-center align-items-center badge badge-dark rounded-circle px-1 btn-close">
-                                    <i class="fa fa-close text-white" aria-hidden="true"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-                </div>
                 <div class="col-md-4 mb-3">
                     <div class="cart-summary card card-body border-0 h-100">
                         <h4 class="card-title text-center">Summary</h4>
                         <form>
-                            <div class="form-row my-5">
+                            <div class="form-row">
                                 <div class="col">
                                     <label>Order Total</label>
                                 </div>
                                 <div class="col">
-                                    <label>$850.00</label>
+                                    <label>$<span class="order-total">0.00</span></label>
                                 </div>
                             </div>
-                            <div class="form-row my-5">
+                            <div class="form-row">
                                 <div class="col">
                                     <label>Promo Code</label>
                                 </div>
@@ -368,21 +238,21 @@
                                     <input type="text" class="form-control" >
                                 </div>
                             </div>
-                            <div class="form-row my-5">
+                            <div class="form-row">
                                 <div class="col">
                                     <label>Shipping</label>
                                 </div>
                                 <div class="col">
-                                    <label>$90.00</label>
+                                    <label>$<span class="shipping-fee">90.00</span></label>
                                 </div>
                             </div>
-                            <hr class="my-5" />
-                            <div class="form-row my-5">
+                            <hr class="" />
+                            <div class="form-row">
                                 <div class="col">
                                     <label><h4>Total</h4></label>
                                 </div>
                                 <div class="col">
-                                    <label><h4>$940.00</h4></label>
+                                    <label><h4>$<span class="total">0.00</span></h4></label>
                                 </div>
                             </div>
                             <button type="submit" class="btn btn-block btn-dark">CHECKOUT</button>
@@ -396,5 +266,6 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="./js/cart.js"></script>
 </body>
 </html>
