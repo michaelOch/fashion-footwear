@@ -8,49 +8,6 @@ body {
     font-family: 'Raleway', "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-/* Header Section Styles */
-
-.header-section h1 {
-    margin-top: 1.5rem;
-    font-size: 50px;
-    font-weight: bold;
-}
-
-.navbar-nav li:hover {
-    background-color: #ffffff;
-}
-
-.navbar-nav li a {
-    color: #ffffff;
-    font-size: 18px;
-    text-decoration: none;
-    padding: .5rem 2rem;
-}
-
-.navbar-nav li:hover > a {
-    color: #292b2c;
-}
-
-.navbar-nav li a:hover {
-    color: #292b2c;
-}
-
-.nav-item_active {
-    background-color: #ffffff;
-}
-
-.nav-link_active {
-    color: #000000 !important;
-}
-
-.cart-log {
-    position: absolute;
-    top: -8px;
-    left: 50%;
-    background-color: #F80909;
-    color: #ffffff;
-}
-
 /* Cart Section Styles */
 
 .cart-section tbody > tr {

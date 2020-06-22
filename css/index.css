@@ -21,6 +21,14 @@ body {
     font-weight: bold;
 }
 
+.nav-item:hover {
+    background-color: #000000;
+}
+
+.nav-item:hover > a {
+    color: #ffffff !important;
+}
+
 .active-link {
     background-color: #000000;
 }
