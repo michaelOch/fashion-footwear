@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+
+    <!--Font family-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="./css/login-signup.css" type="text/css" />
+
+    <title>Sign Up or Log In</title>
+  </head>
+  <body>
+    <div class="container-fluid home-container">
+      <div class="row">
+        <div class="col-md-5 col-sm-0 d-none d-md-block pr-0 mw-100  mh-100 page-image">
+          <img
+            class="img-fluid w-100"
+            src="./img/SfzbMnIocdc.png"
+            alt="page image"
+          />
+        </div>
+        <div class="col-md-7 col-sm-12 pt-5 page-content">
+          <h1 class="font-weight-bold text-center page-heading">
+            LEGWORK
+          </h1>
+          <h2 class="text-center page-subheading">
+            Discover the latest trends
+          </h2>
+
+          <div class="row row-register">
+            <div class="col-1"></div>
+            <div
+              class="col-5 pt-4 text-center col-sign-up"
+              id="signupbtn"
+              role="button"
+            >
+              <h4>NEW MEMBER? SIGN UP</h4>
+            </div>
+            <div
+              class="col-5 pt-4 text-center col-log-in"
+              id="loginbtn"
+              role="button"
+            >
+              <h4>ALREADY REGISTERED?</h4>
+            </div>
+            <div class="col-1"></div>
+          </div>
+
+          <!--LOGIN FORM-->
+          <div class="row mt-3 px-sm-5 row-login-form" id="login-form">
+            <div class="row mx-auto w-75">
+              <div
+                class="col-md-8 col-sm-6 mx-auto justify-content-center align-items-center flex-column form-group col-email"
+              >
+                <label for="user-email" class="font-weight-bolder user-email">EMAIL</label>
+                <input
+                  type="email"
+                  class="form-control rounded-0"
+                  id="user-email"
+                />
+
+                <label for="user-password" class="mt-1 font-weight-bolder user-password"
+                  >PASSWORD</label
+                >
+                <input
+                  type="password"
+                  class="form-control rounded-0"
+                  id="user-password"
+                />
+
+                <button type="button" class="btn btn-dark rounded-0 mt-3 w-100 sign-in">
+                  SIGN IN
+                </button>
+                <p class="float-right d-block mt-2 mb-5" role="button">Forgot password?</p>
+                <div class="dropdown-divider mt-md-4 mb-3 w-100"></div>
+              </div>
+            </div>
+          </div>
+
+          <!--SIGNUP FORM-->
+          <div class="row mt-3 px-sm-5 row-signup-form" id="signup-form">
+            <div class="row mx-auto w-75">
+              <div
+                class="col-md-8 col-sm-6 mx-auto justify-content-center align-items-center flex-column form-group col-email"
+              >
+                <label for="user-email" class="font-weight-bolder user-email">EMAIL</label>
+                <input
+                  type="email"
+                  class="form-control rounded-0"
+                  id="new-user-email"
+                />
+
+                <label for="user-password" class="mt-1 font-weight-bolder user-password"
+                  >PASSWORD</label
+                >
+                <input
+                  type="password"
+                  class="form-control rounded-0"
+                  id="new-user-password"
+                />
+
+                <button type="button" class="btn btn-dark rounded-0 mt-3 w-100 sign-up">
+                  SIGN UP
+                </button>
+                <div class="dropdown-divider mt-4 mb-3"></div>
+              </div>
+            </div>
+          </div>
+
+          <!--DISCOUNT & SUBSCRIPTION FOR NEWSLETTER-->
+          <div class="row mb-5 text-center row-discount">
+            <div class="col-3 col-md-2"></div>
+            <div class="col-6 col-md-8">
+              <p>Amazing Offers for Subscribers</p>
+              <h2 class="font-weight-bolder">15% Member Discount</h2>
+              <p class="mt-sm-4 mb-sm-4">
+                Subscribe to our newletters now and stay up to date with new
+                collections, the latest lookbooks and exclusive offers.
+              </p>
+
+              <div
+                class="d-flex mx-auto justify-content-center align-items-center mb-sm-5 mb-md-4"
+              >
+                <div class="col-9 px-0">
+                  <input
+                    type="email"
+                    placeholder="Enter email here"
+                    class="form-control rounded-0 px-2 py-2"
+                    id="subscribe-email"
+                  />
+                </div>
+                <div class="col-3 pl-0">
+                  <button
+                    type="button"
+                    class="btn btn-dark rounded-0 subscribe-btn"
+                    id="subscribe-btn"
+                  >
+                    SUBSCRIBE
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <script src="./js/login-signup.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

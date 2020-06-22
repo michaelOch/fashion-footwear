@@ -1,0 +1,101 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+h4 {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+}
+
+.home-container {
+    padding: 0;
+    overflow: hidden;
+}
+
+.dropdown-divider {
+    border-color: rgb(105, 105, 105);
+}
+
+p {
+    color: rgb(105, 105, 105);
+}
+
+/*BUTTONS */
+.sign-up,
+.sign-in,
+.subscribe-btn {
+    background-color: #000;
+}
+
+
+/* PAGE IMAGE */
+.page-image {
+    height: 100vh;
+}
+
+.page-image img {
+    height: auto;
+}
+
+/* PAGE CONTENT */
+.page-subheading {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 36px;
+}
+
+/*SIGN UP AND LOGIN TOGGLE */
+.row-register {
+    color: #A49E9E;
+}
+
+.col-sign-up:active {
+    color: black;
+}
+
+.col-log-in:active {
+    color: black;
+}
+.row-signup-form {
+    display: none;
+}
+
+.row-login-form {
+    display: block;
+}
+
+
+@media (max-width: 768px ) {
+    h4 {
+        font-size: 12px;
+        line-height: 24px;
+    }
+
+    h2 {
+        font-size: 21px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    #subscribe-btn {
+        font-size: 14px;
+    }
+
+    #subscribe-email {
+        font-size: 14px;
+    }
+
+    .user-email,
+    .user-password {
+        font-size: 14px;
+    }
+
+}
+
+
+

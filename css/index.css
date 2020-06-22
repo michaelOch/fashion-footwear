@@ -1,0 +1,368 @@
+* {
+	margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', "Montserrat", "Lato", Helvetica, Arial, sans-serif;
+}
+
+/* Header Section Navbar */
+/* Navbar */
+.navbar-brand_custom {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.navbar-nav a {
+    color: #000000 !important;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.active-link {
+    background-color: #000000;
+}
+
+.active-link > a {
+    color: #ffffff !important;
+}
+
+.navbar-icons {
+    position: absolute;
+    bottom: 0px;
+    right: 1.5rem;
+}
+
+/* Code Section */
+.code-secton {
+    background-color: #000000;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 15px;
+    margin-top: 5rem;
+}
+
+.code-secton p span {
+    color: #00ffff;
+}
+
+/* Explore Section */
+
+.explore-section {
+    height: 90vh;
+    color: #ffffff;
+    background-image: url(../img/header.png);
+    background-size: cover;
+    background-position: top;
+    background-blend-mode: overlay;
+    background-color: rgba(36, 37, 47, 0.3);
+}
+
+.explore-section h1 {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.explore-section p {
+    font-size: 24px;
+}
+
+.explore-section a:hover {
+    color: #000000;
+    text-decoration: none;
+}
+
+.btn-shop {
+    background-color: #ffffff;
+    color: #000000;
+    font-weight: bold;
+    padding: 5px 20px;
+    border-radius: 15px;
+}
+
+/* Category Section */
+
+.btn-category {
+    background-color: #ffffff;
+    font-size: 45px;
+    font-weight: bold;
+    padding: 5px 20px;
+    border-radius: 25px;
+}
+
+.category-section a {
+    color: #000000;
+}
+
+.category-section a:hover {
+    text-decoration: none;
+}
+
+.category-section_women > a {
+    position: absolute;
+    left: 50px;
+    bottom: 30px;
+}
+
+.category-section_men > a {
+    position: absolute;
+    right: 50px;
+    bottom: 30px;
+}
+
+/* Gallery Section */
+.gallery-section {
+    padding-top: 70px;
+    padding-bottom: 110px;
+    background: #333333;
+    color: #ffffff;
+}
+
+.gallery-section h2 {
+    font-size: 45px;
+    margin-bottom: 70px;
+}
+
+.gallery-section img {
+    width: 100%;
+    height: 90%;
+}
+
+.gallery-custom_right {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+}
+
+.gallery-img_right {
+    width: 35%;
+}
+
+.gallery-img_right.img-first {
+    margin-right: 3rem;
+}
+
+/* Collections Section */
+
+.collection-section {
+    height: 470px;
+    padding-top: 50px;
+    background: #7AECF3;
+}
+
+.collection-section h2 {
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.collection-section p {
+    font-size: 22px;
+    margin: 50px 0;
+}
+
+.collection-section a {
+    color: #000000;
+}
+
+.collection-section a:hover {
+    text-decoration: none;
+}
+
+img.collection-image_left {
+    width: 400px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+img.collection-image_right {
+    width: 500px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/* Client Section */
+
+.client-section {
+    padding: 3rem 0;
+}
+
+.client-section h2 {
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.client-section p {
+    font-size: 18px;
+}
+
+.client-section footer {
+    text-align: right;
+}
+
+/* Partners Section */
+
+.partners-section h2 {
+    font-size: 45px;
+    font-weight: bold;
+}
+
+/* Footer Section */
+.footer-section h3 {
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.footer-section a {
+    color: #000000;
+}
+
+.footer-section a:hover {
+    color: #B2B2B2;
+}
+
+/**************************************************
+    * @media queries *
+***************************************************/
+
+@media only screen and (max-width: 992px) {
+    /* Navbar */
+    .navbar-brand_custom {
+        font-size: 32px;
+    }
+    .navbar-icons {
+        position: relative;
+        margin-left: auto;
+    }
+    /* Collection Section */
+    img.collection-image_left {
+        position: absolute;
+        top: 30px;
+        left: 0;
+    }
+    img.collection-image_right {
+        position: absolute;
+        top: 70px;
+        right: 0;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    /* Navabr */
+    .navbar-brand_custom {
+        font-size: 28px;
+    }
+    /* Code Section */
+    .code-secton {
+        margin-top: 4rem;
+    }
+    .code-secton {
+        font-size: 12px;
+    }
+    /* Explore Section */
+    .explore-section {
+        height: 50vh;
+    }
+    .explore-section h1 {
+        font-size: 26px;
+    }
+    
+    .explore-section p {
+        font-size: 18px;
+    }
+    /* Category Section */
+    .btn-category {
+        font-size: 20px;
+        padding: 3px 10px;
+    }
+    .category-section_women > a {
+        position: absolute;
+        left: 10px;
+        bottom: 10px;
+    }
+    .category-section_men > a {
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
+    }
+    /* Gallery Section */
+    .gallery-section {
+        padding: 20px 0;
+    }
+    .gallery-section h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    .gallery-section img {
+        width: 100%;
+        height: 70%;
+    }
+    .gallery-custom_right {
+        justify-content: center;
+    }
+    .gallery-img_right.img-first {
+        margin-right: 2rem;
+    }
+    .gallery-section p {
+        font-size: 12px;
+    }
+    /* Collections Section */
+    .collection-section {
+        height: 350px;
+        padding-top: 10px;
+    }
+    .collection-section h2 {
+        font-size: 32px;
+    }
+    .collection-section p {
+        font-size: 20px;
+        margin-top: 20px;
+        margin-bottom: 180px;
+    }
+    img.collection-image_left {
+        width: 160px;
+        position: absolute;
+        top: 100px;
+        left: 0;
+    }
+    img.collection-image_right {
+        width: 200px;
+        position: absolute;
+        top: 100px;
+        right: 0;
+    }
+    /* Client Section */
+    .client-section {
+        background: #F5F5F5;
+        padding: 1rem 0;
+    }
+    .client-section h2 {
+        font-size: 32px;
+    }
+    .client-section img {
+        width: 120px;
+    }
+    .client-section p {
+        text-align: center;
+    }
+    .client-section footer {
+        text-align: center;
+    }
+    .client-section_second {
+        display: none;
+    }
+    /* Partners Section */
+    .partners-section h2 {
+        font-size: 32px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    /* Navabr */
+    .navbar-brand_custom {
+        font-size: 22px;
+    }
+}
